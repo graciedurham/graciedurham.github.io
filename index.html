@@ -50,19 +50,6 @@
     		</div>
   		</div>
 	</div>
-	<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Images</button>
-    
-	<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-  		<div class="modal-dialog modal-lg" role="document">
-    		<div class="modal-content">
-      			<script>
-      			var lemons = ["alemon.jpg", "lemonade-640-dm.jpg","limes.jpg"];
-      			var image = lemons[Math.floor(Math.random()*lemons.length)];
-      			</script>
-      			<img src= image>
-    		</div>
-  		</div>
-	</div>
     </div><!-- /.container -->
     <script text="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.js">
     </script>
@@ -72,5 +59,19 @@
     	$('h1').html('Hello GWC');
     	$('p').html('stoked');
     </script>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Images</button>
+    
+	<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+  		<div class="modal-dialog modal-lg" role="document">
+    		<div class="modal-content">
+      			<script>
+      			var lemons = ["alemon.jpg", "lemonade-640-dm.jpg","limes.jpg"];
+      			var image = lemons[Math.floor(Math.random()*lemons.length)];
+      			$('img src').html(image);
+      			</script>
+      			<img src= "">
+    		</div>
+  		</div>
+	</div>
 	</body>
 </html>
